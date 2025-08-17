@@ -6,7 +6,7 @@ pipeline {
         COURSE = 'Devops with Jenkins'
     }
     options {
-        timeout(time: 1, unit: 'SECONDS')
+        timeout(time: 3, unit: 'SECONDS')
         disableConcurrentBuilds()
     }
     stages{
