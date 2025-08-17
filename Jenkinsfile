@@ -28,6 +28,7 @@ pipeline {
     post {
         always {
             echo 'I will say hello again'
+            deleteDir()
         }
         success {
             echo 'Build is success'
