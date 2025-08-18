@@ -15,6 +15,7 @@ pipeline {
                 script{
                     sh """
                     echo 'Build stage'
+                    sleep 10
                     env
                     """
                 }
