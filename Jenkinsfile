@@ -2,11 +2,17 @@ pipeline {
     agent {
         label 'AGENT-1'
     }
+    environment {
+        COURSE = 'Devops with Jenkins'
+    }
     stages{
         stage('Build'){
             steps{
                 script{
+                    sh """
                     echo 'Build stage'
+                    env
+                    """
                 }
             }
         }
