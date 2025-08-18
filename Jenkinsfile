@@ -42,7 +42,7 @@ pipeline {
                 ok "Yes, we should."
                 submitter "alice,bob"
                 parameters {
-                    string(name: 'PERSON', defaultValue: 'Mahi', description: 'Who should I say hello to?')
+                    string(name: 'PERSON', defaultValue: 'Mahee', description: 'Who should I say hello to?')
             }
             steps{
                 script{
